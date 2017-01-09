@@ -1,7 +1,4 @@
-<div id="page_wrapper">
-   <h1>New Post</h1>
-   
-   <%= form_for @post do |f| %>
+<%= form_for @post do |f| %>
 	<% if @post.errors.any? %>
 		<div id="errors">
 			<h2><%= pluralize(@post.errors.count, "error") %> prevented this post from saving:</h2>
@@ -20,4 +17,3 @@
 	<br>
 	<%= f.submit %>
 <% end %>
-</div>
